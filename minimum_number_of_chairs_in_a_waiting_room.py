@@ -67,3 +67,17 @@ class Solution:
             if len(now) > max_people:
                 max_people = len(now)
         return max_people
+
+# Solution2
+class Solution:
+    def minimumChairs(self, s: str) -> int:
+        count = 0
+        max_people = 0
+        for person in s:
+            if person =="E" :
+                count +=1
+            else:
+                count -=1
+            if count > max_people:
+                max_people = count
+        return max_people
