@@ -51,5 +51,5 @@ class Solution:
             elif number in removed_elem:
                 try: 
                     unique_elements.remove(number)
-                except: ValueError(print("No element"))
+                except: ValueError("No element")
         return sum(unique_elements)

@@ -38,7 +38,12 @@ Constraints:
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        new_dict = {i:nums.count(i) for i in nums}
+        #new_dict = {i:nums.count(i) for i in nums}
+        new_dict = {}
+        for i in nums:
+            if i not in new_dict:
+                new_dict[i] = 0
+            new_dict[i] += 1
         for key, value in new_dict.items():
             if value == min(new_dict):
                 return key
