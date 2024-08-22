@@ -35,15 +35,21 @@ Constraints:
 
 
 '''
-
+# Option 1
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        #new_dict = {i:nums.count(i) for i in nums}
-        new_dict = {}
-        for i in nums:
-            if i not in new_dict:
-                new_dict[i] = 0
-            new_dict[i] += 1
+        new_dict = {i:nums.count(i) for i in nums}
         for key, value in new_dict.items():
             if value == min(new_dict):
                 return key
+
+# Option 2
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        new_dict = {}
+        for i in nums:
+            if i in new_dict:
+                new_dict[i]+=1
+            else:
+                new_dict[i] = 1
+        return min(new_dict, key=new_dict.get)
