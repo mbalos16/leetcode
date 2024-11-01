@@ -5,7 +5,7 @@ In this repository, I’ve gathered all my solutions to [Leetcode](https://leetc
 I began solving Leetcode problems in June 2024, aiming to enhance my coding skills and improve in Python. Since then, I’ve been working to solve at least five problems weekly.
 
 # Milestones
-- Solved close to 200 problems, primarily in the "Easy" category, with a gradual shift toward "Medium."
+- Solved 200 problems, primarily in the "Easy" category, with a gradual shift toward "Medium."
 - Improved my Leetcode ranking from 1,091,491 to 535,959 – a journey of steady progress.
 - Maintained an 80% acceptance rate for the first two months, which later settled to 72% as I took on the more challenging daily problems.
 - Developed a broad set of foundational, intermediate, and advanced skills, which you can explore in my [Leetcode profile](https://lnkd.in/eJyWMSrY).
